@@ -15,8 +15,14 @@ This code is a toolkit for genomic analysis. It includes several functions and h
 
 ## File format
 **gtf_file**: Include CHR, START, END, Other info(GENE Symbol);
+
 **cell_gene_dict**: A dictionary:(1) key:celltype's name;(2)value:a list of genes;
+
 **gene_info**: Output file from **extract_gene_info(gtf_file)**: Include: GENE, CHR, START, END;
+
 **gwas**: First teo columns: chr, pos;
+
 **celltype_range**: A dictionary:(1) key:celltype's name;(2)value:a list of genome position:[chr, start, end\];
+
 **output_file**: A dictionary:(1) key:celltype's name;(2)value:[chr, pos ,…… , annotation\] (annotation: 1 for anntation and 0 for null).
+
