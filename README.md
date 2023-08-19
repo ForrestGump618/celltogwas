@@ -14,15 +14,27 @@ This code is a toolkit for genomic analysis. It includes several functions and h
 **gwas_annotaion(gwas, celltype_range)**: Annotates GWAS data based on genomic ranges. This function takes a DataFrame of GWAS data and a dictionary of genomic ranges as input. It first retrieves the list of chromosomes from the GWAS data. Then, it iterates through the genomic ranges for each cell type. For each chromosome, it retrieves the subset of GWAS data corresponding to that chromosome and the annotation ranges from the genomic ranges. It then iterates through each data item in the subset and uses the check_value_in_intervals function to check if the position of the data item falls within the annotation ranges. If it does, the data item is marked as annotated. Finally, it stores the annotation results for all cell types in a dictionary and returns it.
 
 ## File format
-**gtf_file**: Include CHR, START, END, Other info(GENE Symbol);
+**gtf_file**:
+Include CHR, START, END, Other info(GENE Symbol);
 
-**cell_gene_dict**: A dictionary:(1) key:celltype's name;(2)value:a list of genes;
+**cell_gene_dict**:
+A dictionary:
+(1) key:celltype's name;
+(2) value:a list of genes;
 
-**gene_info**: Output file from **extract_gene_info(gtf_file)**: Include: GENE, CHR, START, END;
+**gene_info**: Output file from **extract_gene_info(gtf_file)**:
+Include: GENE, CHR, START, END;
 
-**gwas**: First teo columns: chr, pos;
+**gwas**:
+First teo columns: chr, pos;
 
-**celltype_range**: A dictionary:(1) key:celltype's name;(2)value:a list of genome position:[chr, start, end\];
+**celltype_range**:
+A dictionary:
+(1) key:celltype's name;
+(2) value:a list of genome position:[chr, start, end\];
 
-**output_file**: A dictionary:(1) key:celltype's name;(2)value:[chr, pos ,…… , annotation\] (annotation: 1 for anntation and 0 for null).
+**output_file**:
+A dictionary:
+(1) key:celltype's name;
+(2) value:[chr, pos ,…… , annotation\] (annotation: 1 for anntation and 0 for null).
 
