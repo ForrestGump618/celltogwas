@@ -46,8 +46,8 @@ def celltype_genome_range(cell_gene_dict,gene_info,windowsize):
     for celltype in list(cell_gene_dict.keys()):
         gene_set = pd.DataFrame(cell_gene_dict[celltype],columns=["GENE"])
         df = pd.merge(gene_set, gene_info, on = 'GENE', how = 'inner')
-        df['START'] = np.maximum(1, int(df['START']) - windowsize)
-        df['END'] = df['END'] + windowsize
+        df['START'] = np.maximum(1, df['START'].astype(int) - windowsize)
+        df['END'] = df['END'].astype(int) + windowsize
         iter_df_pre = [['chr'+(str(x1).lstrip('chr')), x2 - 1, x3] for (x1,x2,x3) in np.array(df[['CHR', 'START', 'END']])]
         iter_df_pre_dic = {}
         for sublist in iter_df_pre:
@@ -63,7 +63,7 @@ def celltype_genome_range(cell_gene_dict,gene_info,windowsize):
             element = [[range_list[i][0],range_list[i][1]] for i in range(len(range_list))]
             celltype_range_sub[chrom] = element
         print(f"{celltype} completed!")
-        celltype_range[celltype] = element
+        celltype_range[celltype] = celltype_range_sub
     print(f"runing time: {time.time()-time0}s")
     return celltype_range
 
