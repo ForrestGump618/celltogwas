@@ -37,34 +37,35 @@ def merge_intervals(intervals):
     merged = sorted(merged, key=lambda x: x[0])
     return merged
 
-def celltype_genome_range(cell_gene_dict,gene_info,windowsize):
+def celltype_genome_range(cell_gene_dict, gene_info, windowsize):
     time0 = time.time()
-    # input file: a dictionary: 
-                    # key(str): name of celltype;
-                    # value(list):list of genes' names.
     celltype_range = {}
-    for celltype in list(cell_gene_dict.keys()):
-        gene_set = pd.DataFrame(cell_gene_dict[celltype],columns=["GENE"])
-        df = pd.merge(gene_set, gene_info, on = 'GENE', how = 'inner')
-        df['START'] = np.maximum(1, int(df['START']) - windowsize)
-        df['END'] = df['END'] + windowsize
-        iter_df_pre = [['chr'+(str(x1).lstrip('chr')), x2 - 1, x3] for (x1,x2,x3) in np.array(df[['CHR', 'START', 'END']])]
+    
+    for celltype, genes in cell_gene_dict.items():
+        gene_set = pd.DataFrame(genes, columns=["GENE"])
+        df = pd.merge(gene_set, gene_info, on='GENE', how='inner')
+        df['START'] = np.maximum(1, df['START'].astype(int) - windowsize)
+        df['END'] = df['END'].astype(int) + windowsize
+        
+        iter_df_pre = [['chr' + str(x1).lstrip('chr'), x2 - 1, x3] for x1, x2, x3 in np.array(df[['CHR', 'START', 'END']])]
         iter_df_pre_dic = {}
+        
         for sublist in iter_df_pre:
             key = sublist[0]
             value = sublist[1:]
-            if key in iter_df_pre_dic:
-                iter_df_pre_dic[key].append(value)
-            else:
-                iter_df_pre_dic[key] = [value]
+            iter_df_pre_dic.setdefault(key, []).append(value)
+        
         celltype_range_sub = {}
-        for chrom in list(iter_df_pre_dic.keys()):
-            range_list = merge_intervals(iter_df_pre_dic[chrom])
-            element = [[range_list[i][0],range_list[i][1]] for i in range(len(range_list))]
+        
+        for chrom, intervals in iter_df_pre_dic.items():
+            range_list = merge_intervals(intervals)
+            element = [[range_list[i][0], range_list[i][1]] for i in range(len(range_list))]
             celltype_range_sub[chrom] = element
-        print(f"{celltype} completed!")
-        celltype_range[celltype] = element
-    print(f"runing time: {time.time()-time0}s")
+        
+        print(f"{celltype} completed！")
+        celltype_range[celltype] = celltype_range_sub
+    
+    print(f"running：{time.time() - time0}s")
     return celltype_range
 
 
@@ -79,24 +80,26 @@ def check_value_in_intervals(intervals, value):
     
     return False
 
-def gwas_annotaion(gwas,celltype_range):
+def gwas_annotation(gwas, celltype_range):
     time0 = time.time()
-    # gwas file must contain:chr("chr*"), pos(int), and it should be the first two cols.
-    # option: rsid and so on
-    chr_list = list(set(gwas["chr"].tolist()))
+    chr_list = set(gwas["CHR"].tolist())
     all_annotation = {}
-    for celltype in list(celltype_range.keys()):
-        annotation_ref = celltype_range[celltype]
+    for celltype, annotation_ref in celltype_range.items():
         sub_gwas_annotation = []
         for chrom in chr_list:
-            sub_gwas = gwas[gwas["chr"==chrom]].values().tolist()
+            sub_gwas = gwas[gwas["CHR"] == chrom].values.tolist()
             sub_annotation_ref = annotation_ref[chrom]
             for item in sub_gwas:
                 if check_value_in_intervals(sub_annotation_ref, item[1]):
                     item.append("1")
                 else:
                     item.append("0")
-                sub_gwas_annotation.append([chrom]+item)
+                sub_gwas_annotation.append(item)
+            print(f"{celltype} {chrom}: completed!",sep = " ")
+
         all_annotation[celltype] = sub_gwas_annotation
-    print(f"runing time: {time.time()-time0}s")
+        print(f"{celltype} completed!")
+        print(f"running time: {time.time() - time0}s")
+        time0 = time.time()
+
     return all_annotation
