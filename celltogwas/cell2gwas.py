@@ -80,26 +80,26 @@ def check_value_in_intervals(intervals, value):
     
     return False
 
+
 def gwas_annotation(gwas, celltype_range):
     time0 = time.time()
-    chr_list = set(gwas["CHR"].tolist())
-    all_annotation = {}
-    for celltype, annotation_ref in celltype_range.items():
-        sub_gwas_annotation = []
-        for chrom in chr_list:
-            sub_gwas = gwas[gwas["CHR"] == chrom].values.tolist()
-            sub_annotation_ref = annotation_ref[chrom]
-            for item in sub_gwas:
-                if check_value_in_intervals(sub_annotation_ref, item[1]):
-                    item.append("1")
-                else:
-                    item.append("0")
-                sub_gwas_annotation.append(item)
-            print(f"{celltype} {chrom}: completed!",sep = " ")
-
-        all_annotation[celltype] = sub_gwas_annotation
-        print(f"{celltype} completed!")
-        print(f"running time: {time.time() - time0}s")
-        time0 = time.time()
-
-    return all_annotation
+    gwas_list = gwas.values.tolist()
+    gwas_annotation_list = []
+    col_names = gwas.columns.to_list() + list(celltype_range.keys())
+    
+    for i, item in enumerate(gwas_list, start=1):
+        if i % 500000 == 0:
+            print(f"{i} completed!")
+        
+        annotations = []
+        for annotation_ref in celltype_range.values():
+            sub_annotation_ref = annotation_ref[item[0]]
+            if check_value_in_intervals(sub_annotation_ref, item[1]):
+                annotations.append("1")
+            else:
+                annotations.append("0")
+        
+        gwas_annotation_list.append(item + annotations)
+    
+    print(f"running time: {time.time() - time0}s")
+    return pd.DataFrame(gwas_annotation_list, columns=col_names)
