@@ -1,0 +1,49 @@
+{
+  "n_genes_standard": 55367,
+  "n_genes_hmagma": 53239,
+  "n_matched_genes_with_snps": 53021,
+  "zstat_spearman": 0.6008859123905258,
+  "zstat_bootstrap_95ci": [
+    0.5945794862665809,
+    0.6073743840067457
+  ],
+  "p_spearman": 0.60088600313326,
+  "top_gene_overlap": {
+    "100": {
+      "overlap": 40,
+      "jaccard": 0.25,
+      "fraction_of_available_top_k": 0.4
+    },
+    "500": {
+      "overlap": 278,
+      "jaccard": 0.3850415512465374,
+      "fraction_of_available_top_k": 0.556
+    },
+    "1000": {
+      "overlap": 570,
+      "jaccard": 0.3986013986013986,
+      "fraction_of_available_top_k": 0.57
+    }
+  },
+  "top_gene_overlap_within_common_genes": {
+    "100": {
+      "overlap": 42,
+      "jaccard": 0.26582278481012656,
+      "fraction_of_available_top_k": 0.42
+    },
+    "500": {
+      "overlap": 290,
+      "jaccard": 0.4084507042253521,
+      "fraction_of_available_top_k": 0.58
+    },
+    "1000": {
+      "overlap": 580,
+      "jaccard": 0.4084507042253521,
+      "fraction_of_available_top_k": 0.58
+    }
+  },
+  "top_gene_overlap_background": "Primary top-k lists use each model's full gene universe; common-universe results are also retained.",
+  "known_ad_gene_rows": 17,
+  "known_ad_gene_output": "D:\\celltogwas-validation-results\\v1\\comparison\\known_ad_genes_magma.tsv",
+  "bootstrap_note": "Percentile bootstrap resamples genes and is descriptive; shared LD and annotation dependence mean it must not be interpreted as an independent-replicate confidence interval."
+}

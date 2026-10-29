@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use celltogwas, cite the software and the relevant methods listed in README.md."
+title: "celltogwas"
+version: 1.0.0
+date-released: "2026-10-29"
+license: GPL-3.0-only
+repository-code: "https://github.com/ForrestGump618/celltogwas"
+authors:
+  - family-names: "Zhuang"
+    given-names: "Qingyuan"
+    email: "zhuangqingyuan@foxmail.com"
+preferred-citation:
+  type: software
+  title: "celltogwas: regulatory-aware cell-type to GWAS mapping"
+  version: "1.0.0"
+  year: 2026
+  authors:
+    - family-names: "Zhuang"
+      given-names: "Qingyuan"

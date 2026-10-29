@@ -1,0 +1,21 @@
+{
+  "line_endings": "LF",
+  "sha256": {
+    "cell_type_method_concordance.json": "65c447c8e8c6e4f64330fa8b537fda440c678c359ce2be0f89d489fd4937c361",
+    "cell_type_rank_comparison.tsv": "b1c7f83d1c825d1266a70f59771046fde2351fa7d551559cf7291fa796f295bb",
+    "expression_manifest.json": "68b9b626f7cd9ef7ed652ff957173f85b8b9191ab1712179d336be24e04396d5",
+    "gwas_harmonization.json": "16d0e59771c60045dd158deacd8341b01a4baa5dee6bb84179f4ac24f82e54c0",
+    "known_ad_genes_magma.tsv": "eafbf928d45362759c0a60f1851e626cf8464e078c5af4156a718ea92f887ce8",
+    "magma_gene_concordance.json": "c977922da49bc282f0e390bd24372d21827485f63d6e8359bed2b6fd19845e5e",
+    "marker_summary.tsv": "1079a125b94b3f8e6b79d114daf6754746a504c6a5eeae589a28972672c65dec",
+    "membership_aligned.tsv": "c5a2d184511441e5a03d2631f24c58bedf839299383ec1d0b1061e5db28c5101",
+    "method_concordance.tsv": "4f62f62eb4450f04bd58ff179b7bf2c263c16029423fc7d6093ba7c0c96da6a5",
+    "primary_weighted.tsv": "f5ff9c3aceff66e654f9b8b5e7b0a37eae56b2ed20b0d28f5ef6c53cbd34fe85",
+    "README.md": "5dd3d3fa33d49b1c8206b06a8fd6791ee770560f09bf3cb387e4debc4144db22",
+    "sensitivity_all_snps.tsv": "5c170b904833e6fa428c5d7de34a3be3922ac8536a56347755a3ef85e2e00fd4",
+    "sensitivity_no_mhc.tsv": "3ebd1123d28b346548c63a34718c69e49cd84b7f5e62b4691e38008ae491b1ae",
+    "sensitivity_p1e5.tsv": "c6bc77f64dd8855e23a61c9d8925912b727ef6265b2ec8ef2b71969beac9eda5",
+    "source_verification.json": "7e132459b8a14a6fc041eebc58f12dd7263b4bf04ffc60c999027ccfccaccc1e",
+    "validation_summary.json": "bd734a086d88dff8fb36d28a52bb254803f7f9820149b52787b7f579f9fb1a4d"
+  }
+}

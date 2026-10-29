@@ -1,0 +1,22 @@
+{
+  "primary_recomputed_with_release_core": true,
+  "byte_identical": true,
+  "original_table_sha256": "484580c23e8634be81139a4e054d79780ae60b3c8402f40c3587a31455e8a400",
+  "recomputed_table_sha256": "484580c23e8634be81139a4e054d79780ae60b3c8402f40c3587a31455e8a400",
+  "core_source_sha256": {
+    "celltogwas/__init__.py": "92f44796a1971c0bc51490fc1c56431bc26b7104a229618a28ca97c30164771c",
+    "celltogwas/__main__.py": "08c564645aa001b3eaf255ba7c5928ba27368a9f78c7d9f6d6c3e49867c1de56",
+    "celltogwas/_version.py": "2c98e86c105d05b678c9b438e433e133a9a82c619bc2a3b1520efa152ec4c267",
+    "celltogwas/cell2gwas.py": "d387bd879190db0c26ba774bf1124e88472272a894f6a01fb3a0f578dc4f7021",
+    "celltogwas/cli.py": "e0090a3369e84ce38b0300d7c2a18cfb70fa08e779b84ea4a58f2aaa8a91015b",
+    "celltogwas/enrichment.py": "faf3947dc87c7330fd1e04f7b3b37bffa584fff7fb2af088f8c9788b2c22f9f3",
+    "celltogwas/exceptions.py": "077910d65fb9ed993d52b7add2cb995fb0e2b7cf876b1e7286810f8eaede5c2e",
+    "celltogwas/interval.py": "71ca49bc3933642f01fa73d9c00279ffd46665b91b3164a056379e1b6bc1d002",
+    "celltogwas/io.py": "e580aad22fb246499e78fba8d020f7b5ef47a4430cdef5df09308e84f4f555e8",
+    "celltogwas/legacy.py": "abf45cabac9a6d9789d53f09757e30ac09cf24d4aff50cd87acfc61f89a80175",
+    "celltogwas/linker.py": "706632b467192f170e560cc9e8be24aa136b2bf60712a7b9fca853f84ffbde2b",
+    "celltogwas/models.py": "472b280010b61b88486b7a5b688d3bfad8f9eda76563afeed43eb7036f625330",
+    "celltogwas/specificity.py": "d4bd2c6d9cbd9cfcdb45e62e32f31df3da97842f1558bbe46be255212b767633"
+  },
+  "note": "Final validation guards and normalized source line endings preserve the observed and null statistics."
+}

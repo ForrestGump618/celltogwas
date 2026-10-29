@@ -1,0 +1,240 @@
+{
+  "generated_at": "2026-10-29",
+  "datasets": [
+    {
+      "relative_path": "gwas/GCST90027158_buildGRCh38.tsv.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90027001-GCST90028000/GCST90027158/GCST90027158_buildGRCh38.tsv.gz",
+      "size": 755201909,
+      "sha256": "013134d22a2a0c2dd0cb683192d0c109da1aec83ba54d94a837a8b71bcbc4a1f",
+      "official_md5": "9d23b9ba23532da38ab83fb061bab18f",
+      "source": "https://www.ebi.ac.uk/gwas/studies/GCST90027158"
+    },
+    {
+      "relative_path": "psychencode/Astro.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/Astro.expr.bed.gz",
+      "size": 46079439,
+      "sha256": "3c0efdfbd004da266579397d233584496fafd716af5156a83dcacb980e431715",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/Chandelier__Pvalb.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/Chandelier__Pvalb.expr.bed.gz",
+      "size": 50941562,
+      "sha256": "04b9101669a6d60c2e47d9f70443b820219a629bd7ed9df23ba4a5e8ab0e5c9f",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/Endo__VLMC.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/Endo__VLMC.expr.bed.gz",
+      "size": 15313303,
+      "sha256": "358006f927be1918d9f8baeca320a6136aa8fc505b9f747103ebc48e9098d217",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/Immune.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/Immune.expr.bed.gz",
+      "size": 2614129,
+      "sha256": "0a92b80d9ff2c669be9ac9bd4d46e1ea111135bce9cdbc32f7b90355772d4775",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/L2.3.IT.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/L2.3.IT.expr.bed.gz",
+      "size": 72573832,
+      "sha256": "1fdbf7dcfed75f5209067985824c265809a7bdd1defed2c479c8e1b5d33998f4",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/L4.IT.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/L4.IT.expr.bed.gz",
+      "size": 54703642,
+      "sha256": "a3719592df6f592662c324df0581a79acd83bd587e5ba2daa8aaac6ad6a202e7",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/L5.6.NP.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/L5.6.NP.expr.bed.gz",
+      "size": 22047846,
+      "sha256": "e28c9babb5ae39b8762bb5f4378d876571b0ef81b0ae37eefa8be234957145e6",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/L5.ET.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/L5.ET.expr.bed.gz",
+      "size": 3953378,
+      "sha256": "1377c04a0ed68c5b2dba4c0fbd19c6e6c18f3d441b8b9439cfd4b7ddb0c7b671",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/L5.IT.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/L5.IT.expr.bed.gz",
+      "size": 62234459,
+      "sha256": "50e04f2fd41790593e08a601227db2f7c0056cf406efb26a1355c1ca2b841066",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/L6.CT.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/L6.CT.expr.bed.gz",
+      "size": 28534097,
+      "sha256": "e3bd97e194fd816c506aacba6621dc9d57ab72157f630d9b497e07b506274f46",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/L6.IT.Car3.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/L6.IT.Car3.expr.bed.gz",
+      "size": 17591836,
+      "sha256": "b0956e53f5adb75a6ef2973c776b7c34e249c62f2b82ceca4f94ab763b88d7f7",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/L6.IT.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/L6.IT.expr.bed.gz",
+      "size": 58899022,
+      "sha256": "a67d18aeb8fd12f64eebe46ec194b916ca45d50d8ed0f1a336982e9b9b851158",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/L6b.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/L6b.expr.bed.gz",
+      "size": 27825361,
+      "sha256": "29e9eb3aa6024bd1216e918aaae135658f5065385d82f42b7b54491a0cfa8b04",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/Lamp5.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/Lamp5.expr.bed.gz",
+      "size": 31057708,
+      "sha256": "64277be1d0ae2a4f3309884dad6a20970e23382235835955a5cc14fe8c0bea85",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/Lamp5.Lhx6.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/Lamp5.Lhx6.expr.bed.gz",
+      "size": 19598701,
+      "sha256": "62faf5fbda283651d1c482d43ebe0a416c172735acd6e411200d660f696296fc",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/Micro.PVM.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/Micro.PVM.expr.bed.gz",
+      "size": 22498948,
+      "sha256": "4a9d8108c278304000e6e6fc1c6a8def7b36b9d8ab86b450955af6d4dcb7b5dc",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/Oligo.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/Oligo.expr.bed.gz",
+      "size": 46334495,
+      "sha256": "c0f0bde902dccc9fc62af1015df4946eee74aed8b380a0fe26dfa98d12667855",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/OPC.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/OPC.expr.bed.gz",
+      "size": 39142182,
+      "sha256": "46ad4e3a086c44997f6bddb12e269774a5c0ef6786fe793b16f43318bcbdaf52",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/Pax6.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/Pax6.expr.bed.gz",
+      "size": 3944071,
+      "sha256": "e1cae482e2f6ae8d9871d7400986ae0226103f533f05ccb27adbd4aa678f798d",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/PC.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/PC.expr.bed.gz",
+      "size": 11273859,
+      "sha256": "bf60eba046d554abf93d01c3bc078b1ef66471d264128833fcc308c3aa242d2b",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/SMC.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/SMC.expr.bed.gz",
+      "size": 2255245,
+      "sha256": "ad4e446951a26ce8583a0824e1460f8d9b335aa6cc453e7b2c81c818afcc0a8d",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/Sncg.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/Sncg.expr.bed.gz",
+      "size": 17823392,
+      "sha256": "8c022c798d502c268994dffbcb34b0ac81881f823969bb38e3ef11ce26774ead",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/Sst__Sst.Chodl.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/Sst__Sst.Chodl.expr.bed.gz",
+      "size": 40465673,
+      "sha256": "e4c8d41bffcb054fc19764769aee3449476ca417b24d82a96d2800b7111ab7ee",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "psychencode/Vip.expr.bed.gz",
+      "url": "https://brainscope.gersteinlab.org/data/pseudobulk_expr/Vip.expr.bed.gz",
+      "size": 45962546,
+      "sha256": "e7dc78c6250939b42bacf41c7721941cf1ea7a9b9874a20b9e94c4b669efb8e4",
+      "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html"
+    },
+    {
+      "relative_path": "gencode/gencode.v19.annotation.gtf.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf.gz",
+      "size": 37991892,
+      "sha256": "9909e8123a40eca090c3f8e501633f7cc65cd6c4adb83b95009745eca3564d70",
+      "source": "https://www.gencodegenes.org/human/release_19.html"
+    },
+    {
+      "relative_path": "hmagma/Adult_brain.genes.annot",
+      "url": "https://raw.githubusercontent.com/thewonlab/H-MAGMA/master/Input_Files/Adult_brain.genes.annot",
+      "size": 44671388,
+      "sha256": "f8bd94a66e879f0c4e78237adbb3114b93ef1f167bd289c1bec03c98d0449e22",
+      "source": "https://github.com/thewonlab/H-MAGMA"
+    },
+    {
+      "relative_path": "hmagma/MAGMAdefault.genes.annot.gz",
+      "url": "https://raw.githubusercontent.com/thewonlab/H-MAGMA/master/Input_Files/MAGMAdefault.genes.annot.gz",
+      "size": 56704162,
+      "sha256": "a51bec91f8efe200f1a3544c07e1410c0db795e70e2a82817fd8075d780dfe9e",
+      "source": "https://github.com/thewonlab/H-MAGMA"
+    },
+    {
+      "relative_path": "magma/magma_v1.10_win.zip",
+      "url": "https://vu.data.surfsara.nl/index.php/s/TOH4SuvczAKE29d/download",
+      "size": 2151875,
+      "sha256": "953a2a88eb3a7047b2963712a5fce5d74ab82ca63c9ac32bc3184b3055020507",
+      "source": "https://cncr.nl/research/magma/",
+      "extract_to": "magma/magma_v1.10_win",
+      "redistribution": "Prohibited by MAGMA terms; download directly from the official site."
+    },
+    {
+      "relative_path": "magma/g1000_eur.zip",
+      "url": "https://vu.data.surfsara.nl/index.php/s/VZNByNwpD8qqINe/download",
+      "size": 511626945,
+      "sha256": "83a48fd9dcaa0b9a874b18c63143a4ede93f05505b215b0bd8790130a0d7a954",
+      "source": "https://cncr.nl/research/magma/",
+      "extract_to": "magma/g1000_eur"
+    },
+    {
+      "relative_path": "gwas/GCST90027158_buildGRCh38.tsv.gz-meta.yaml",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90027001-GCST90028000/GCST90027158/GCST90027158_buildGRCh38.tsv.gz-meta.yaml",
+      "size": 1238,
+      "sha256": "f27c635833b4200a0790c247d5d6e44f4352461a8317ac168a4a829cd7152151",
+      "source": "https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90027001-GCST90028000/GCST90027158/"
+    },
+    {
+      "relative_path": "gwas/md5sum.txt",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90027001-GCST90028000/GCST90027158/md5sum.txt",
+      "size": 140,
+      "sha256": "92d997145d497fdc217bed9a7c176a86c5b48c624e86e219a21fc6e7257eeaea",
+      "source": "https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90027001-GCST90028000/GCST90027158/"
+    },
+    {
+      "relative_path": "gwas/README.txt",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90027001-GCST90028000/GCST90027158/README.txt",
+      "size": 526,
+      "sha256": "57cdd26f9b69bcfb17094c6882162fd72bdc43929e0b805b8ea8998296c34540",
+      "source": "https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90027001-GCST90028000/GCST90027158/"
+    }
+  ]
+}

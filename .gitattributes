@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png -text
+*.whl -text
+*.gz -text
+# Generated SVG paths and TSV empty fields legitimately end with whitespace.
+docs/figures/*.svg -whitespace
+validation/results/*.tsv -whitespace

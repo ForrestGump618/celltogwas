@@ -1,0 +1,538 @@
+{
+  "dataset": "PsychENCODE brainSCOPE adult DLPFC pseudobulk",
+  "source": "https://brainscope.gersteinlab.org/output-pseudobulk-expr.html",
+  "cell_type_count": 24,
+  "n_genes_union": 30149,
+  "n_genes_present_in_all_cell_types": 17158,
+  "n_donor_ids_union": 352,
+  "n_donors_present_in_all_cell_types": 1,
+  "cell_types": [
+    {
+      "cell_type": "Astro",
+      "n_donors": 315,
+      "n_genes": 25391,
+      "n_detected_genes": 25391,
+      "mean_expression_median": 1.6420644391431614,
+      "detection_fraction_median": 0.746031746031746,
+      "source_file": "Astro.expr.bed.gz",
+      "sha256": "3c0efdfbd004da266579397d233584496fafd716af5156a83dcacb980e431715"
+    },
+    {
+      "cell_type": "Chandelier__Pvalb",
+      "n_donors": 313,
+      "n_genes": 26342,
+      "n_detected_genes": 26342,
+      "mean_expression_median": 1.5362133786672112,
+      "detection_fraction_median": 0.8178913738019169,
+      "source_file": "Chandelier__Pvalb.expr.bed.gz",
+      "sha256": "04b9101669a6d60c2e47d9f70443b820219a629bd7ed9df23ba4a5e8ab0e5c9f"
+    },
+    {
+      "cell_type": "Endo__VLMC",
+      "n_donors": 128,
+      "n_genes": 23410,
+      "n_detected_genes": 23410,
+      "mean_expression_median": 2.123092858717853,
+      "detection_fraction_median": 0.71875,
+      "source_file": "Endo__VLMC.expr.bed.gz",
+      "sha256": "358006f927be1918d9f8baeca320a6136aa8fc505b9f747103ebc48e9098d217"
+    },
+    {
+      "cell_type": "Immune",
+      "n_donors": 36,
+      "n_genes": 19256,
+      "n_detected_genes": 19256,
+      "mean_expression_median": 2.232754819237412,
+      "detection_fraction_median": 0.5833333333333334,
+      "source_file": "Immune.expr.bed.gz",
+      "sha256": "0a92b80d9ff2c669be9ac9bd4d46e1ea111135bce9cdbc32f7b90355772d4775"
+    },
+    {
+      "cell_type": "L2.3.IT",
+      "n_donors": 346,
+      "n_genes": 29629,
+      "n_detected_genes": 29629,
+      "mean_expression_median": 1.2952033631824058,
+      "detection_fraction_median": 0.9132947976878613,
+      "source_file": "L2.3.IT.expr.bed.gz",
+      "sha256": "1fdbf7dcfed75f5209067985824c265809a7bdd1defed2c479c8e1b5d33998f4"
+    },
+    {
+      "cell_type": "L4.IT",
+      "n_donors": 319,
+      "n_genes": 27060,
+      "n_detected_genes": 27060,
+      "mean_expression_median": 1.6168768121215213,
+      "detection_fraction_median": 0.8495297805642633,
+      "source_file": "L4.IT.expr.bed.gz",
+      "sha256": "a3719592df6f592662c324df0581a79acd83bd587e5ba2daa8aaac6ad6a202e7"
+    },
+    {
+      "cell_type": "L5.6.NP",
+      "n_donors": 160,
+      "n_genes": 24258,
+      "n_detected_genes": 24258,
+      "mean_expression_median": 1.9526718648729702,
+      "detection_fraction_median": 0.80625,
+      "source_file": "L5.6.NP.expr.bed.gz",
+      "sha256": "e28c9babb5ae39b8762bb5f4378d876571b0ef81b0ae37eefa8be234957145e6"
+    },
+    {
+      "cell_type": "L5.ET",
+      "n_donors": 28,
+      "n_genes": 26382,
+      "n_detected_genes": 26382,
+      "mean_expression_median": 1.8690420884578094,
+      "detection_fraction_median": 0.8928571428571429,
+      "source_file": "L5.ET.expr.bed.gz",
+      "sha256": "1377c04a0ed68c5b2dba4c0fbd19c6e6c18f3d441b8b9439cfd4b7ddb0c7b671"
+    },
+    {
+      "cell_type": "L5.IT",
+      "n_donors": 333,
+      "n_genes": 28464,
+      "n_detected_genes": 28464,
+      "mean_expression_median": 1.4216833805330915,
+      "detection_fraction_median": 0.8618618618618619,
+      "source_file": "L5.IT.expr.bed.gz",
+      "sha256": "50e04f2fd41790593e08a601227db2f7c0056cf406efb26a1355c1ca2b841066"
+    },
+    {
+      "cell_type": "L6.CT",
+      "n_donors": 202,
+      "n_genes": 24549,
+      "n_detected_genes": 24549,
+      "mean_expression_median": 1.8189824486916166,
+      "detection_fraction_median": 0.801980198019802,
+      "source_file": "L6.CT.expr.bed.gz",
+      "sha256": "e3bd97e194fd816c506aacba6621dc9d57ab72157f630d9b497e07b506274f46"
+    },
+    {
+      "cell_type": "L6.IT.Car3",
+      "n_donors": 123,
+      "n_genes": 24860,
+      "n_detected_genes": 24860,
+      "mean_expression_median": 1.7787439767653397,
+      "detection_fraction_median": 0.8536585365853658,
+      "source_file": "L6.IT.Car3.expr.bed.gz",
+      "sha256": "b0956e53f5adb75a6ef2973c776b7c34e249c62f2b82ceca4f94ab763b88d7f7"
+    },
+    {
+      "cell_type": "L6.IT",
+      "n_donors": 328,
+      "n_genes": 27766,
+      "n_detected_genes": 27766,
+      "mean_expression_median": 1.4791631739903945,
+      "detection_fraction_median": 0.8628048780487805,
+      "source_file": "L6.IT.expr.bed.gz",
+      "sha256": "a67d18aeb8fd12f64eebe46ec194b916ca45d50d8ed0f1a336982e9b9b851158"
+    },
+    {
+      "cell_type": "L6b",
+      "n_donors": 171,
+      "n_genes": 26624,
+      "n_detected_genes": 26624,
+      "mean_expression_median": 1.593635619482776,
+      "detection_fraction_median": 0.8596491228070176,
+      "source_file": "L6b.expr.bed.gz",
+      "sha256": "29e9eb3aa6024bd1216e918aaae135658f5065385d82f42b7b54491a0cfa8b04"
+    },
+    {
+      "cell_type": "Lamp5.Lhx6",
+      "n_donors": 163,
+      "n_genes": 21830,
+      "n_detected_genes": 21830,
+      "mean_expression_median": 2.2472363968144267,
+      "detection_fraction_median": 0.803680981595092,
+      "source_file": "Lamp5.Lhx6.expr.bed.gz",
+      "sha256": "62faf5fbda283651d1c482d43ebe0a416c172735acd6e411200d660f696296fc"
+    },
+    {
+      "cell_type": "Lamp5",
+      "n_donors": 223,
+      "n_genes": 23633,
+      "n_detected_genes": 23633,
+      "mean_expression_median": 1.990235035220155,
+      "detection_fraction_median": 0.8295964125560538,
+      "source_file": "Lamp5.expr.bed.gz",
+      "sha256": "64277be1d0ae2a4f3309884dad6a20970e23382235835955a5cc14fe8c0bea85"
+    },
+    {
+      "cell_type": "Micro.PVM",
+      "n_donors": 207,
+      "n_genes": 21801,
+      "n_detected_genes": 21801,
+      "mean_expression_median": 2.013497910570356,
+      "detection_fraction_median": 0.642512077294686,
+      "source_file": "Micro.PVM.expr.bed.gz",
+      "sha256": "4a9d8108c278304000e6e6fc1c6a8def7b36b9d8ab86b450955af6d4dcb7b5dc"
+    },
+    {
+      "cell_type": "OPC",
+      "n_donors": 295,
+      "n_genes": 23440,
+      "n_detected_genes": 23440,
+      "mean_expression_median": 1.9016887196150134,
+      "detection_fraction_median": 0.7491525423728813,
+      "source_file": "OPC.expr.bed.gz",
+      "sha256": "46ad4e3a086c44997f6bddb12e269774a5c0ef6786fe793b16f43318bcbdaf52"
+    },
+    {
+      "cell_type": "Oligo",
+      "n_donors": 339,
+      "n_genes": 24777,
+      "n_detected_genes": 24777,
+      "mean_expression_median": 1.250969419149108,
+      "detection_fraction_median": 0.6666666666666666,
+      "source_file": "Oligo.expr.bed.gz",
+      "sha256": "c0f0bde902dccc9fc62af1015df4946eee74aed8b380a0fe26dfa98d12667855"
+    },
+    {
+      "cell_type": "PC",
+      "n_donors": 97,
+      "n_genes": 23240,
+      "n_detected_genes": 23240,
+      "mean_expression_median": 1.9526791109433315,
+      "detection_fraction_median": 0.711340206185567,
+      "source_file": "PC.expr.bed.gz",
+      "sha256": "bf60eba046d554abf93d01c3bc078b1ef66471d264128833fcc308c3aa242d2b"
+    },
+    {
+      "cell_type": "Pax6",
+      "n_donors": 36,
+      "n_genes": 22672,
+      "n_detected_genes": 22672,
+      "mean_expression_median": 2.254097759384154,
+      "detection_fraction_median": 0.8333333333333334,
+      "source_file": "Pax6.expr.bed.gz",
+      "sha256": "e1cae482e2f6ae8d9871d7400986ae0226103f533f05ccb27adbd4aa678f798d"
+    },
+    {
+      "cell_type": "SMC",
+      "n_donors": 23,
+      "n_genes": 22065,
+      "n_detected_genes": 22065,
+      "mean_expression_median": 2.4238722693317443,
+      "detection_fraction_median": 0.782608695652174,
+      "source_file": "SMC.expr.bed.gz",
+      "sha256": "ad4e446951a26ce8583a0824e1460f8d9b335aa6cc453e7b2c81c818afcc0a8d"
+    },
+    {
+      "cell_type": "Sncg",
+      "n_donors": 145,
+      "n_genes": 22377,
+      "n_detected_genes": 22377,
+      "mean_expression_median": 2.3005067547207765,
+      "detection_fraction_median": 0.8206896551724138,
+      "source_file": "Sncg.expr.bed.gz",
+      "sha256": "8c022c798d502c268994dffbcb34b0ac81881f823969bb38e3ef11ce26774ead"
+    },
+    {
+      "cell_type": "Sst__Sst.Chodl",
+      "n_donors": 278,
+      "n_genes": 25116,
+      "n_detected_genes": 25116,
+      "mean_expression_median": 1.6687006182027702,
+      "detection_fraction_median": 0.7661870503597122,
+      "source_file": "Sst__Sst.Chodl.expr.bed.gz",
+      "sha256": "e4c8d41bffcb054fc19764769aee3449476ca417b24d82a96d2800b7111ab7ee"
+    },
+    {
+      "cell_type": "Vip",
+      "n_donors": 294,
+      "n_genes": 25739,
+      "n_detected_genes": 25739,
+      "mean_expression_median": 1.8189978409210843,
+      "detection_fraction_median": 0.8197278911564626,
+      "source_file": "Vip.expr.bed.gz",
+      "sha256": "e7dc78c6250939b42bacf41c7721941cf1ea7a9b9874a20b9e94c4b669efb8e4"
+    }
+  ],
+  "marker_parameters": {
+    "method": "tau",
+    "power": 1.0,
+    "min_expression": 0.1,
+    "min_detection_fraction": 0.1,
+    "top_n": 1000,
+    "gene_universe": "Genes reported in all 24 matrices and represented by a GENCODE v19 gene symbol; this common universe is fixed before GWAS analysis."
+  },
+  "n_genes_in_gencode_v19_symbol_universe": 17965,
+  "n_markers_requested": 24000,
+  "n_markers_selected": 24000,
+  "n_unique_markers_selected": 5072,
+  "ensembl_set_sizes": {
+    "Astro": 1002,
+    "Chandelier__Pvalb": 1007,
+    "Endo__VLMC": 1004,
+    "Immune": 1005,
+    "L2.3.IT": 1001,
+    "L4.IT": 1003,
+    "L5.6.NP": 1010,
+    "L5.ET": 1006,
+    "L5.IT": 1005,
+    "L6.CT": 1007,
+    "L6.IT": 1002,
+    "L6.IT.Car3": 1002,
+    "L6b": 1006,
+    "Lamp5": 1002,
+    "Lamp5.Lhx6": 1003,
+    "Micro.PVM": 1004,
+    "OPC": 1002,
+    "Oligo": 1003,
+    "PC": 1004,
+    "Pax6": 1002,
+    "SMC": 1005,
+    "Sncg": 1003,
+    "Sst__Sst.Chodl": 1008,
+    "Vip": 1003
+  },
+  "marker_summary": [
+    {
+      "cell_type": "Astro",
+      "n_markers": 1000,
+      "min_weight": 0.4095961221661371,
+      "median_weight": 0.5244307332279785,
+      "max_weight": 0.9249962455409049,
+      "median_mean_expression": 5.184944490897209,
+      "median_detection_fraction": 0.9777777777777777
+    },
+    {
+      "cell_type": "Chandelier__Pvalb",
+      "n_markers": 1000,
+      "min_weight": 0.3085489272765236,
+      "median_weight": 0.3602709221440362,
+      "max_weight": 0.9130440043644914,
+      "median_mean_expression": 4.6362330590119445,
+      "median_detection_fraction": 0.9648562300319489
+    },
+    {
+      "cell_type": "Endo__VLMC",
+      "n_markers": 1000,
+      "min_weight": 0.41178782372858963,
+      "median_weight": 0.5318556502422461,
+      "max_weight": 0.8965133919818706,
+      "median_mean_expression": 5.9080610760753025,
+      "median_detection_fraction": 0.9609375
+    },
+    {
+      "cell_type": "Immune",
+      "n_markers": 1000,
+      "min_weight": 0.3853590167206715,
+      "median_weight": 0.5439833685109038,
+      "max_weight": 0.9401799025517196,
+      "median_mean_expression": 5.70979357353343,
+      "median_detection_fraction": 0.9166666666666666
+    },
+    {
+      "cell_type": "L2.3.IT",
+      "n_markers": 1000,
+      "min_weight": 0.3353701326983834,
+      "median_weight": 0.3907405919310788,
+      "max_weight": 0.8571413869437187,
+      "median_mean_expression": 4.091487537682866,
+      "median_detection_fraction": 0.9884393063583815
+    },
+    {
+      "cell_type": "L4.IT",
+      "n_markers": 1000,
+      "min_weight": 0.32716268580548113,
+      "median_weight": 0.38035116844511985,
+      "max_weight": 0.8420841627035227,
+      "median_mean_expression": 4.461114135980635,
+      "median_detection_fraction": 0.9749216300940439
+    },
+    {
+      "cell_type": "L5.6.NP",
+      "n_markers": 1000,
+      "min_weight": 0.30682910418292497,
+      "median_weight": 0.3629359267417558,
+      "max_weight": 0.8782108525869438,
+      "median_mean_expression": 5.006009551952523,
+      "median_detection_fraction": 0.9625
+    },
+    {
+      "cell_type": "L5.ET",
+      "n_markers": 1000,
+      "min_weight": 0.3353094127272292,
+      "median_weight": 0.3894150508436104,
+      "max_weight": 0.8299926621058511,
+      "median_mean_expression": 4.0273241355592155,
+      "median_detection_fraction": 1.0
+    },
+    {
+      "cell_type": "L5.IT",
+      "n_markers": 1000,
+      "min_weight": 0.3239486369115404,
+      "median_weight": 0.3721851732741662,
+      "max_weight": 0.792439681827211,
+      "median_mean_expression": 4.408157964684757,
+      "median_detection_fraction": 0.978978978978979
+    },
+    {
+      "cell_type": "L6.CT",
+      "n_markers": 1000,
+      "min_weight": 0.2972568023055787,
+      "median_weight": 0.3454702071593371,
+      "max_weight": 0.8186929516932319,
+      "median_mean_expression": 5.124857129159434,
+      "median_detection_fraction": 0.9653465346534653
+    },
+    {
+      "cell_type": "L6.IT",
+      "n_markers": 1000,
+      "min_weight": 0.3217514707560402,
+      "median_weight": 0.36925418987983094,
+      "max_weight": 0.7076391269814395,
+      "median_mean_expression": 4.488705099100754,
+      "median_detection_fraction": 0.9817073170731707
+    },
+    {
+      "cell_type": "L6.IT.Car3",
+      "n_markers": 1000,
+      "min_weight": 0.30521234353906057,
+      "median_weight": 0.35662658297061234,
+      "max_weight": 0.8572949550181872,
+      "median_mean_expression": 5.005150499828567,
+      "median_detection_fraction": 0.983739837398374
+    },
+    {
+      "cell_type": "L6b",
+      "n_markers": 1000,
+      "min_weight": 0.3118747960972456,
+      "median_weight": 0.3649725496369713,
+      "max_weight": 0.8552354596305389,
+      "median_mean_expression": 4.909591136427003,
+      "median_detection_fraction": 0.9883040935672515
+    },
+    {
+      "cell_type": "Lamp5",
+      "n_markers": 1000,
+      "min_weight": 0.2975567983163516,
+      "median_weight": 0.3446831321242553,
+      "max_weight": 0.837582335152541,
+      "median_mean_expression": 5.242498182772856,
+      "median_detection_fraction": 0.968609865470852
+    },
+    {
+      "cell_type": "Lamp5.Lhx6",
+      "n_markers": 1000,
+      "min_weight": 0.28745338958537753,
+      "median_weight": 0.33489969799865016,
+      "max_weight": 0.8102883829016312,
+      "median_mean_expression": 5.665253658367578,
+      "median_detection_fraction": 0.9693251533742331
+    },
+    {
+      "cell_type": "Micro.PVM",
+      "n_markers": 1000,
+      "min_weight": 0.3938343744644722,
+      "median_weight": 0.5509777283831891,
+      "max_weight": 0.9228473719562824,
+      "median_mean_expression": 5.51908960811363,
+      "median_detection_fraction": 0.961352657004831
+    },
+    {
+      "cell_type": "OPC",
+      "n_markers": 1000,
+      "min_weight": 0.3451210661995237,
+      "median_weight": 0.43815375929921696,
+      "max_weight": 0.9472274115901602,
+      "median_mean_expression": 5.902598366950782,
+      "median_detection_fraction": 0.9728813559322034
+    },
+    {
+      "cell_type": "Oligo",
+      "n_markers": 1000,
+      "min_weight": 0.3599918155408348,
+      "median_weight": 0.4906139244320765,
+      "max_weight": 0.9399828777096123,
+      "median_mean_expression": 5.194959946231842,
+      "median_detection_fraction": 0.9705014749262537
+    },
+    {
+      "cell_type": "PC",
+      "n_markers": 1000,
+      "min_weight": 0.4230571029246568,
+      "median_weight": 0.545054147737905,
+      "max_weight": 0.8916246898613995,
+      "median_mean_expression": 5.936798651857403,
+      "median_detection_fraction": 0.9484536082474226
+    },
+    {
+      "cell_type": "Pax6",
+      "n_markers": 1000,
+      "min_weight": 0.3031497648714797,
+      "median_weight": 0.3538788176048824,
+      "max_weight": 0.8260073338456068,
+      "median_mean_expression": 5.3266850136129555,
+      "median_detection_fraction": 0.9722222222222222
+    },
+    {
+      "cell_type": "SMC",
+      "n_markers": 1000,
+      "min_weight": 0.43939498789017517,
+      "median_weight": 0.542932389721635,
+      "max_weight": 0.9261751094670457,
+      "median_mean_expression": 5.931672447083334,
+      "median_detection_fraction": 1.0
+    },
+    {
+      "cell_type": "Sncg",
+      "n_markers": 1000,
+      "min_weight": 0.3004228249062489,
+      "median_weight": 0.3547598805411848,
+      "max_weight": 0.8567152417787097,
+      "median_mean_expression": 5.625199992148518,
+      "median_detection_fraction": 0.9724137931034482
+    },
+    {
+      "cell_type": "Sst__Sst.Chodl",
+      "n_markers": 1000,
+      "min_weight": 0.29226090386375625,
+      "median_weight": 0.34065592276255896,
+      "max_weight": 0.9060212091154777,
+      "median_mean_expression": 5.427577638552516,
+      "median_detection_fraction": 0.9568345323741008
+    },
+    {
+      "cell_type": "Vip",
+      "n_markers": 1000,
+      "min_weight": 0.3188504462695135,
+      "median_weight": 0.37263702317241487,
+      "max_weight": 0.9119454033838643,
+      "median_mean_expression": 5.133463974803189,
+      "median_detection_fraction": 0.967687074829932
+    }
+  ],
+  "unmapped_marker_symbols": {
+    "Astro": [],
+    "Chandelier__Pvalb": [],
+    "Endo__VLMC": [],
+    "Immune": [],
+    "L2.3.IT": [],
+    "L4.IT": [],
+    "L5.6.NP": [],
+    "L5.ET": [],
+    "L5.IT": [],
+    "L6.CT": [],
+    "L6.IT": [],
+    "L6.IT.Car3": [],
+    "L6b": [],
+    "Lamp5": [],
+    "Lamp5.Lhx6": [],
+    "Micro.PVM": [],
+    "OPC": [],
+    "Oligo": [],
+    "PC": [],
+    "Pax6": [],
+    "SMC": [],
+    "Sncg": [],
+    "Sst__Sst.Chodl": [],
+    "Vip": []
+  },
+  "interpretation_limits": [
+    "Donor columns differ by cell type; means use all donors in which a cell type was observed.",
+    "Only one donor is represented in all 24 cell types, so a complete-donor-only profile is not estimable.",
+    "Marker weights are derived from expression specificity, not from GWAS association."
+  ]
+}

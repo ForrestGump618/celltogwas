@@ -1,0 +1,533 @@
+{
+  "standard_vs_hmagma_genes": {
+    "n_genes_standard": 55367,
+    "n_genes_hmagma": 53239,
+    "n_matched_genes_with_snps": 53021,
+    "zstat_spearman": 0.6008859123905258,
+    "zstat_bootstrap_95ci": [
+      0.5945794862665809,
+      0.6073743840067457
+    ],
+    "p_spearman": 0.60088600313326,
+    "top_gene_overlap": {
+      "100": {
+        "overlap": 40,
+        "jaccard": 0.25,
+        "fraction_of_available_top_k": 0.4
+      },
+      "500": {
+        "overlap": 278,
+        "jaccard": 0.3850415512465374,
+        "fraction_of_available_top_k": 0.556
+      },
+      "1000": {
+        "overlap": 570,
+        "jaccard": 0.3986013986013986,
+        "fraction_of_available_top_k": 0.57
+      }
+    },
+    "top_gene_overlap_within_common_genes": {
+      "100": {
+        "overlap": 42,
+        "jaccard": 0.26582278481012656,
+        "fraction_of_available_top_k": 0.42
+      },
+      "500": {
+        "overlap": 290,
+        "jaccard": 0.4084507042253521,
+        "fraction_of_available_top_k": 0.58
+      },
+      "1000": {
+        "overlap": 580,
+        "jaccard": 0.4084507042253521,
+        "fraction_of_available_top_k": 0.58
+      }
+    },
+    "top_gene_overlap_background": "Primary top-k lists use each model's full gene universe; common-universe results are also retained.",
+    "known_ad_gene_rows": 17,
+    "known_ad_gene_output": "D:\\celltogwas-validation-results\\v1\\comparison\\known_ad_genes_magma.tsv",
+    "bootstrap_note": "Percentile bootstrap resamples genes and is descriptive; shared LD and annotation dependence mean it must not be interpreted as an independent-replicate confidence interval."
+  },
+  "cell_type_comparisons": {
+    "n_common_cell_types": 24,
+    "fdr_significant_cell_types": {
+      "celltogwas_primary": [],
+      "celltogwas_membership": [],
+      "celltogwas_all_snps_sensitivity": [
+        "Immune",
+        "Micro.PVM"
+      ],
+      "standard_magma": [
+        "Immune",
+        "Micro.PVM"
+      ],
+      "hmagma": []
+    },
+    "comparisons": [
+      {
+        "comparison": "primary_weighted_vs_standard",
+        "n_cell_types": 24,
+        "spearman_rho": 0.5069565217391304,
+        "bootstrap_ci_lower": 0.07742626301488446,
+        "bootstrap_ci_upper": 0.7911433278507148,
+        "top3_overlap": 2,
+        "top3_jaccard": 0.5,
+        "top3_primary_weighted_vs_standard_left": "Immune;Endo__VLMC;SMC",
+        "top3_primary_weighted_vs_standard_right": "Immune;Micro.PVM;Endo__VLMC",
+        "top5_overlap": 4,
+        "top5_jaccard": 0.6666666666666666,
+        "top5_primary_weighted_vs_standard_left": "Immune;Endo__VLMC;SMC;PC;Micro.PVM",
+        "top5_primary_weighted_vs_standard_right": "Immune;Micro.PVM;Endo__VLMC;PC;Oligo",
+        "top3_primary_weighted_vs_hmagma_left": null,
+        "top3_primary_weighted_vs_hmagma_right": null,
+        "top5_primary_weighted_vs_hmagma_left": null,
+        "top5_primary_weighted_vs_hmagma_right": null,
+        "top3_membership_aligned_vs_standard_left": null,
+        "top3_membership_aligned_vs_standard_right": null,
+        "top5_membership_aligned_vs_standard_left": null,
+        "top5_membership_aligned_vs_standard_right": null,
+        "top3_membership_aligned_vs_hmagma_left": null,
+        "top3_membership_aligned_vs_hmagma_right": null,
+        "top5_membership_aligned_vs_hmagma_left": null,
+        "top5_membership_aligned_vs_hmagma_right": null,
+        "top3_all_snps_sensitivity_vs_standard_left": null,
+        "top3_all_snps_sensitivity_vs_standard_right": null,
+        "top5_all_snps_sensitivity_vs_standard_left": null,
+        "top5_all_snps_sensitivity_vs_standard_right": null,
+        "top3_all_snps_sensitivity_vs_hmagma_left": null,
+        "top3_all_snps_sensitivity_vs_hmagma_right": null,
+        "top5_all_snps_sensitivity_vs_hmagma_left": null,
+        "top5_all_snps_sensitivity_vs_hmagma_right": null,
+        "top3_standard_vs_hmagma_left": null,
+        "top3_standard_vs_hmagma_right": null,
+        "top5_standard_vs_hmagma_left": null,
+        "top5_standard_vs_hmagma_right": null,
+        "top3_primary_vs_membership_aligned_left": null,
+        "top3_primary_vs_membership_aligned_right": null,
+        "top5_primary_vs_membership_aligned_left": null,
+        "top5_primary_vs_membership_aligned_right": null
+      },
+      {
+        "comparison": "primary_weighted_vs_hmagma",
+        "n_cell_types": 24,
+        "spearman_rho": 0.5060869565217392,
+        "bootstrap_ci_lower": 0.024826644868867605,
+        "bootstrap_ci_upper": 0.8022771363065783,
+        "top3_overlap": 2,
+        "top3_jaccard": 0.5,
+        "top3_primary_weighted_vs_standard_left": null,
+        "top3_primary_weighted_vs_standard_right": null,
+        "top5_overlap": 4,
+        "top5_jaccard": 0.6666666666666666,
+        "top5_primary_weighted_vs_standard_left": null,
+        "top5_primary_weighted_vs_standard_right": null,
+        "top3_primary_weighted_vs_hmagma_left": "Immune;Endo__VLMC;SMC",
+        "top3_primary_weighted_vs_hmagma_right": "Immune;Micro.PVM;Endo__VLMC",
+        "top5_primary_weighted_vs_hmagma_left": "Immune;Endo__VLMC;SMC;PC;Micro.PVM",
+        "top5_primary_weighted_vs_hmagma_right": "Immune;Micro.PVM;Endo__VLMC;PC;Oligo",
+        "top3_membership_aligned_vs_standard_left": null,
+        "top3_membership_aligned_vs_standard_right": null,
+        "top5_membership_aligned_vs_standard_left": null,
+        "top5_membership_aligned_vs_standard_right": null,
+        "top3_membership_aligned_vs_hmagma_left": null,
+        "top3_membership_aligned_vs_hmagma_right": null,
+        "top5_membership_aligned_vs_hmagma_left": null,
+        "top5_membership_aligned_vs_hmagma_right": null,
+        "top3_all_snps_sensitivity_vs_standard_left": null,
+        "top3_all_snps_sensitivity_vs_standard_right": null,
+        "top5_all_snps_sensitivity_vs_standard_left": null,
+        "top5_all_snps_sensitivity_vs_standard_right": null,
+        "top3_all_snps_sensitivity_vs_hmagma_left": null,
+        "top3_all_snps_sensitivity_vs_hmagma_right": null,
+        "top5_all_snps_sensitivity_vs_hmagma_left": null,
+        "top5_all_snps_sensitivity_vs_hmagma_right": null,
+        "top3_standard_vs_hmagma_left": null,
+        "top3_standard_vs_hmagma_right": null,
+        "top5_standard_vs_hmagma_left": null,
+        "top5_standard_vs_hmagma_right": null,
+        "top3_primary_vs_membership_aligned_left": null,
+        "top3_primary_vs_membership_aligned_right": null,
+        "top5_primary_vs_membership_aligned_left": null,
+        "top5_primary_vs_membership_aligned_right": null
+      },
+      {
+        "comparison": "membership_aligned_vs_standard",
+        "n_cell_types": 24,
+        "spearman_rho": 0.5234782608695652,
+        "bootstrap_ci_lower": 0.09583255412018532,
+        "bootstrap_ci_upper": 0.8063979180761421,
+        "top3_overlap": 2,
+        "top3_jaccard": 0.5,
+        "top3_primary_weighted_vs_standard_left": null,
+        "top3_primary_weighted_vs_standard_right": null,
+        "top5_overlap": 4,
+        "top5_jaccard": 0.6666666666666666,
+        "top5_primary_weighted_vs_standard_left": null,
+        "top5_primary_weighted_vs_standard_right": null,
+        "top3_primary_weighted_vs_hmagma_left": null,
+        "top3_primary_weighted_vs_hmagma_right": null,
+        "top5_primary_weighted_vs_hmagma_left": null,
+        "top5_primary_weighted_vs_hmagma_right": null,
+        "top3_membership_aligned_vs_standard_left": "Immune;Endo__VLMC;SMC",
+        "top3_membership_aligned_vs_standard_right": "Immune;Micro.PVM;Endo__VLMC",
+        "top5_membership_aligned_vs_standard_left": "Immune;Endo__VLMC;SMC;PC;Micro.PVM",
+        "top5_membership_aligned_vs_standard_right": "Immune;Micro.PVM;Endo__VLMC;PC;Oligo",
+        "top3_membership_aligned_vs_hmagma_left": null,
+        "top3_membership_aligned_vs_hmagma_right": null,
+        "top5_membership_aligned_vs_hmagma_left": null,
+        "top5_membership_aligned_vs_hmagma_right": null,
+        "top3_all_snps_sensitivity_vs_standard_left": null,
+        "top3_all_snps_sensitivity_vs_standard_right": null,
+        "top5_all_snps_sensitivity_vs_standard_left": null,
+        "top5_all_snps_sensitivity_vs_standard_right": null,
+        "top3_all_snps_sensitivity_vs_hmagma_left": null,
+        "top3_all_snps_sensitivity_vs_hmagma_right": null,
+        "top5_all_snps_sensitivity_vs_hmagma_left": null,
+        "top5_all_snps_sensitivity_vs_hmagma_right": null,
+        "top3_standard_vs_hmagma_left": null,
+        "top3_standard_vs_hmagma_right": null,
+        "top5_standard_vs_hmagma_left": null,
+        "top5_standard_vs_hmagma_right": null,
+        "top3_primary_vs_membership_aligned_left": null,
+        "top3_primary_vs_membership_aligned_right": null,
+        "top5_primary_vs_membership_aligned_left": null,
+        "top5_primary_vs_membership_aligned_right": null
+      },
+      {
+        "comparison": "membership_aligned_vs_hmagma",
+        "n_cell_types": 24,
+        "spearman_rho": 0.5313043478260869,
+        "bootstrap_ci_lower": 0.06991838436792566,
+        "bootstrap_ci_upper": 0.8187555293452083,
+        "top3_overlap": 2,
+        "top3_jaccard": 0.5,
+        "top3_primary_weighted_vs_standard_left": null,
+        "top3_primary_weighted_vs_standard_right": null,
+        "top5_overlap": 4,
+        "top5_jaccard": 0.6666666666666666,
+        "top5_primary_weighted_vs_standard_left": null,
+        "top5_primary_weighted_vs_standard_right": null,
+        "top3_primary_weighted_vs_hmagma_left": null,
+        "top3_primary_weighted_vs_hmagma_right": null,
+        "top5_primary_weighted_vs_hmagma_left": null,
+        "top5_primary_weighted_vs_hmagma_right": null,
+        "top3_membership_aligned_vs_standard_left": null,
+        "top3_membership_aligned_vs_standard_right": null,
+        "top5_membership_aligned_vs_standard_left": null,
+        "top5_membership_aligned_vs_standard_right": null,
+        "top3_membership_aligned_vs_hmagma_left": "Immune;Endo__VLMC;SMC",
+        "top3_membership_aligned_vs_hmagma_right": "Immune;Micro.PVM;Endo__VLMC",
+        "top5_membership_aligned_vs_hmagma_left": "Immune;Endo__VLMC;SMC;PC;Micro.PVM",
+        "top5_membership_aligned_vs_hmagma_right": "Immune;Micro.PVM;Endo__VLMC;PC;Oligo",
+        "top3_all_snps_sensitivity_vs_standard_left": null,
+        "top3_all_snps_sensitivity_vs_standard_right": null,
+        "top5_all_snps_sensitivity_vs_standard_left": null,
+        "top5_all_snps_sensitivity_vs_standard_right": null,
+        "top3_all_snps_sensitivity_vs_hmagma_left": null,
+        "top3_all_snps_sensitivity_vs_hmagma_right": null,
+        "top5_all_snps_sensitivity_vs_hmagma_left": null,
+        "top5_all_snps_sensitivity_vs_hmagma_right": null,
+        "top3_standard_vs_hmagma_left": null,
+        "top3_standard_vs_hmagma_right": null,
+        "top5_standard_vs_hmagma_left": null,
+        "top5_standard_vs_hmagma_right": null,
+        "top3_primary_vs_membership_aligned_left": null,
+        "top3_primary_vs_membership_aligned_right": null,
+        "top5_primary_vs_membership_aligned_left": null,
+        "top5_primary_vs_membership_aligned_right": null
+      },
+      {
+        "comparison": "all_snps_sensitivity_vs_standard",
+        "n_cell_types": 24,
+        "spearman_rho": 0.6373913043478261,
+        "bootstrap_ci_lower": 0.2627426263935088,
+        "bootstrap_ci_upper": 0.8697087991668574,
+        "top3_overlap": 3,
+        "top3_jaccard": 1.0,
+        "top3_primary_weighted_vs_standard_left": null,
+        "top3_primary_weighted_vs_standard_right": null,
+        "top5_overlap": 4,
+        "top5_jaccard": 0.6666666666666666,
+        "top5_primary_weighted_vs_standard_left": null,
+        "top5_primary_weighted_vs_standard_right": null,
+        "top3_primary_weighted_vs_hmagma_left": null,
+        "top3_primary_weighted_vs_hmagma_right": null,
+        "top5_primary_weighted_vs_hmagma_left": null,
+        "top5_primary_weighted_vs_hmagma_right": null,
+        "top3_membership_aligned_vs_standard_left": null,
+        "top3_membership_aligned_vs_standard_right": null,
+        "top5_membership_aligned_vs_standard_left": null,
+        "top5_membership_aligned_vs_standard_right": null,
+        "top3_membership_aligned_vs_hmagma_left": null,
+        "top3_membership_aligned_vs_hmagma_right": null,
+        "top5_membership_aligned_vs_hmagma_left": null,
+        "top5_membership_aligned_vs_hmagma_right": null,
+        "top3_all_snps_sensitivity_vs_standard_left": "Immune;Micro.PVM;Endo__VLMC",
+        "top3_all_snps_sensitivity_vs_standard_right": "Immune;Micro.PVM;Endo__VLMC",
+        "top5_all_snps_sensitivity_vs_standard_left": "Immune;Micro.PVM;Endo__VLMC;PC;L2.3.IT",
+        "top5_all_snps_sensitivity_vs_standard_right": "Immune;Micro.PVM;Endo__VLMC;PC;Oligo",
+        "top3_all_snps_sensitivity_vs_hmagma_left": null,
+        "top3_all_snps_sensitivity_vs_hmagma_right": null,
+        "top5_all_snps_sensitivity_vs_hmagma_left": null,
+        "top5_all_snps_sensitivity_vs_hmagma_right": null,
+        "top3_standard_vs_hmagma_left": null,
+        "top3_standard_vs_hmagma_right": null,
+        "top5_standard_vs_hmagma_left": null,
+        "top5_standard_vs_hmagma_right": null,
+        "top3_primary_vs_membership_aligned_left": null,
+        "top3_primary_vs_membership_aligned_right": null,
+        "top5_primary_vs_membership_aligned_left": null,
+        "top5_primary_vs_membership_aligned_right": null
+      },
+      {
+        "comparison": "all_snps_sensitivity_vs_hmagma",
+        "n_cell_types": 24,
+        "spearman_rho": 0.56,
+        "bootstrap_ci_lower": 0.10721316067892422,
+        "bootstrap_ci_upper": 0.8484257172941052,
+        "top3_overlap": 3,
+        "top3_jaccard": 1.0,
+        "top3_primary_weighted_vs_standard_left": null,
+        "top3_primary_weighted_vs_standard_right": null,
+        "top5_overlap": 4,
+        "top5_jaccard": 0.6666666666666666,
+        "top5_primary_weighted_vs_standard_left": null,
+        "top5_primary_weighted_vs_standard_right": null,
+        "top3_primary_weighted_vs_hmagma_left": null,
+        "top3_primary_weighted_vs_hmagma_right": null,
+        "top5_primary_weighted_vs_hmagma_left": null,
+        "top5_primary_weighted_vs_hmagma_right": null,
+        "top3_membership_aligned_vs_standard_left": null,
+        "top3_membership_aligned_vs_standard_right": null,
+        "top5_membership_aligned_vs_standard_left": null,
+        "top5_membership_aligned_vs_standard_right": null,
+        "top3_membership_aligned_vs_hmagma_left": null,
+        "top3_membership_aligned_vs_hmagma_right": null,
+        "top5_membership_aligned_vs_hmagma_left": null,
+        "top5_membership_aligned_vs_hmagma_right": null,
+        "top3_all_snps_sensitivity_vs_standard_left": null,
+        "top3_all_snps_sensitivity_vs_standard_right": null,
+        "top5_all_snps_sensitivity_vs_standard_left": null,
+        "top5_all_snps_sensitivity_vs_standard_right": null,
+        "top3_all_snps_sensitivity_vs_hmagma_left": "Immune;Micro.PVM;Endo__VLMC",
+        "top3_all_snps_sensitivity_vs_hmagma_right": "Immune;Micro.PVM;Endo__VLMC",
+        "top5_all_snps_sensitivity_vs_hmagma_left": "Immune;Micro.PVM;Endo__VLMC;PC;L2.3.IT",
+        "top5_all_snps_sensitivity_vs_hmagma_right": "Immune;Micro.PVM;Endo__VLMC;PC;Oligo",
+        "top3_standard_vs_hmagma_left": null,
+        "top3_standard_vs_hmagma_right": null,
+        "top5_standard_vs_hmagma_left": null,
+        "top5_standard_vs_hmagma_right": null,
+        "top3_primary_vs_membership_aligned_left": null,
+        "top3_primary_vs_membership_aligned_right": null,
+        "top5_primary_vs_membership_aligned_left": null,
+        "top5_primary_vs_membership_aligned_right": null
+      },
+      {
+        "comparison": "standard_vs_hmagma",
+        "n_cell_types": 24,
+        "spearman_rho": 0.8269565217391305,
+        "bootstrap_ci_lower": 0.6062781099274497,
+        "bootstrap_ci_upper": 0.9325744308231173,
+        "top3_overlap": 3,
+        "top3_jaccard": 1.0,
+        "top3_primary_weighted_vs_standard_left": null,
+        "top3_primary_weighted_vs_standard_right": null,
+        "top5_overlap": 5,
+        "top5_jaccard": 1.0,
+        "top5_primary_weighted_vs_standard_left": null,
+        "top5_primary_weighted_vs_standard_right": null,
+        "top3_primary_weighted_vs_hmagma_left": null,
+        "top3_primary_weighted_vs_hmagma_right": null,
+        "top5_primary_weighted_vs_hmagma_left": null,
+        "top5_primary_weighted_vs_hmagma_right": null,
+        "top3_membership_aligned_vs_standard_left": null,
+        "top3_membership_aligned_vs_standard_right": null,
+        "top5_membership_aligned_vs_standard_left": null,
+        "top5_membership_aligned_vs_standard_right": null,
+        "top3_membership_aligned_vs_hmagma_left": null,
+        "top3_membership_aligned_vs_hmagma_right": null,
+        "top5_membership_aligned_vs_hmagma_left": null,
+        "top5_membership_aligned_vs_hmagma_right": null,
+        "top3_all_snps_sensitivity_vs_standard_left": null,
+        "top3_all_snps_sensitivity_vs_standard_right": null,
+        "top5_all_snps_sensitivity_vs_standard_left": null,
+        "top5_all_snps_sensitivity_vs_standard_right": null,
+        "top3_all_snps_sensitivity_vs_hmagma_left": null,
+        "top3_all_snps_sensitivity_vs_hmagma_right": null,
+        "top5_all_snps_sensitivity_vs_hmagma_left": null,
+        "top5_all_snps_sensitivity_vs_hmagma_right": null,
+        "top3_standard_vs_hmagma_left": "Immune;Micro.PVM;Endo__VLMC",
+        "top3_standard_vs_hmagma_right": "Immune;Micro.PVM;Endo__VLMC",
+        "top5_standard_vs_hmagma_left": "Immune;Micro.PVM;Endo__VLMC;PC;Oligo",
+        "top5_standard_vs_hmagma_right": "Immune;Micro.PVM;Endo__VLMC;PC;Oligo",
+        "top3_primary_vs_membership_aligned_left": null,
+        "top3_primary_vs_membership_aligned_right": null,
+        "top5_primary_vs_membership_aligned_left": null,
+        "top5_primary_vs_membership_aligned_right": null
+      },
+      {
+        "comparison": "primary_vs_membership_aligned",
+        "n_cell_types": 24,
+        "spearman_rho": 0.9669565217391304,
+        "bootstrap_ci_lower": 0.8668855999798014,
+        "bootstrap_ci_upper": 0.9965020440528196,
+        "top3_overlap": 3,
+        "top3_jaccard": 1.0,
+        "top3_primary_weighted_vs_standard_left": null,
+        "top3_primary_weighted_vs_standard_right": null,
+        "top5_overlap": 5,
+        "top5_jaccard": 1.0,
+        "top5_primary_weighted_vs_standard_left": null,
+        "top5_primary_weighted_vs_standard_right": null,
+        "top3_primary_weighted_vs_hmagma_left": null,
+        "top3_primary_weighted_vs_hmagma_right": null,
+        "top5_primary_weighted_vs_hmagma_left": null,
+        "top5_primary_weighted_vs_hmagma_right": null,
+        "top3_membership_aligned_vs_standard_left": null,
+        "top3_membership_aligned_vs_standard_right": null,
+        "top5_membership_aligned_vs_standard_left": null,
+        "top5_membership_aligned_vs_standard_right": null,
+        "top3_membership_aligned_vs_hmagma_left": null,
+        "top3_membership_aligned_vs_hmagma_right": null,
+        "top5_membership_aligned_vs_hmagma_left": null,
+        "top5_membership_aligned_vs_hmagma_right": null,
+        "top3_all_snps_sensitivity_vs_standard_left": null,
+        "top3_all_snps_sensitivity_vs_standard_right": null,
+        "top5_all_snps_sensitivity_vs_standard_left": null,
+        "top5_all_snps_sensitivity_vs_standard_right": null,
+        "top3_all_snps_sensitivity_vs_hmagma_left": null,
+        "top3_all_snps_sensitivity_vs_hmagma_right": null,
+        "top5_all_snps_sensitivity_vs_hmagma_left": null,
+        "top5_all_snps_sensitivity_vs_hmagma_right": null,
+        "top3_standard_vs_hmagma_left": null,
+        "top3_standard_vs_hmagma_right": null,
+        "top5_standard_vs_hmagma_left": null,
+        "top5_standard_vs_hmagma_right": null,
+        "top3_primary_vs_membership_aligned_left": "Immune;Endo__VLMC;SMC",
+        "top3_primary_vs_membership_aligned_right": "Immune;Endo__VLMC;SMC",
+        "top5_primary_vs_membership_aligned_left": "Immune;Endo__VLMC;SMC;PC;Micro.PVM",
+        "top5_primary_vs_membership_aligned_right": "Immune;Endo__VLMC;SMC;PC;Micro.PVM"
+      }
+    ],
+    "top_cell_types": {
+      "celltogwas_primary": [
+        {
+          "cell_type": "Immune",
+          "celltogwas_primary_z": 2.696442282593244
+        },
+        {
+          "cell_type": "Endo__VLMC",
+          "celltogwas_primary_z": 1.7552480019711798
+        },
+        {
+          "cell_type": "SMC",
+          "celltogwas_primary_z": 1.7441787281687913
+        },
+        {
+          "cell_type": "PC",
+          "celltogwas_primary_z": 1.4847572343253805
+        },
+        {
+          "cell_type": "Micro.PVM",
+          "celltogwas_primary_z": 0.9895158673083712
+        }
+      ],
+      "celltogwas_membership": [
+        {
+          "cell_type": "Immune",
+          "celltogwas_membership_z": 2.1465046362387734
+        },
+        {
+          "cell_type": "Endo__VLMC",
+          "celltogwas_membership_z": 1.8543558694168718
+        },
+        {
+          "cell_type": "SMC",
+          "celltogwas_membership_z": 1.6006367753806854
+        },
+        {
+          "cell_type": "PC",
+          "celltogwas_membership_z": 1.5615092894433789
+        },
+        {
+          "cell_type": "Micro.PVM",
+          "celltogwas_membership_z": 1.0069673131431198
+        }
+      ],
+      "celltogwas_all_snps_sensitivity": [
+        {
+          "cell_type": "Immune",
+          "celltogwas_all_snps_z": 4.861361792823011
+        },
+        {
+          "cell_type": "Micro.PVM",
+          "celltogwas_all_snps_z": 3.573794521568288
+        },
+        {
+          "cell_type": "Endo__VLMC",
+          "celltogwas_all_snps_z": 1.988283223820877
+        },
+        {
+          "cell_type": "PC",
+          "celltogwas_all_snps_z": 1.4942067487662722
+        },
+        {
+          "cell_type": "L2.3.IT",
+          "celltogwas_all_snps_z": 1.2239702684084879
+        }
+      ],
+      "standard_magma": [
+        {
+          "cell_type": "Immune",
+          "standard_z": 4.271739510184118
+        },
+        {
+          "cell_type": "Micro.PVM",
+          "standard_z": 3.978259383332194
+        },
+        {
+          "cell_type": "Endo__VLMC",
+          "standard_z": 2.1286140192747696
+        },
+        {
+          "cell_type": "PC",
+          "standard_z": 2.118713758566157
+        },
+        {
+          "cell_type": "Oligo",
+          "standard_z": 1.890356488364856
+        }
+      ],
+      "hmagma": [
+        {
+          "cell_type": "Immune",
+          "hmagma_z": 2.2543718268998307
+        },
+        {
+          "cell_type": "Micro.PVM",
+          "hmagma_z": 2.0086283008267114
+        },
+        {
+          "cell_type": "Endo__VLMC",
+          "hmagma_z": 1.863196463419491
+        },
+        {
+          "cell_type": "PC",
+          "hmagma_z": 1.4425681057830175
+        },
+        {
+          "cell_type": "Oligo",
+          "hmagma_z": 1.3749796913078798
+        }
+      ]
+    },
+    "rank_interpretation": "Cell-type ranking agreement assesses numerical consistency and biological plausibility only; it is not causal evidence."
+  },
+  "limits": [
+    "Rank agreement is not numerical equivalence.",
+    "MAGMA models LD; celltogwas uses circular annotation shifts and does not estimate LD.",
+    "MAGMA and H-MAGMA use different SNP-to-gene models and therefore different gene-level backgrounds.",
+    "GWAS is GRCh38; all methods use rsID-matched GRCh37 1000G EUR positions without liftover.",
+    "scRNA-seq donor coverage differs by cell type; only one donor occurs in all 24 brainSCOPE classes."
+  ]
+}

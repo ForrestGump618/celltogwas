@@ -1,0 +1,64 @@
+{
+  "gwas": {
+    "study": "Bellenguez Alzheimer's disease GWAS, accession GCST90027158",
+    "accession": "GCST90027158",
+    "source_build": "GRCh38",
+    "analysis_build": "GRCh37 / hg19",
+    "coordinate_strategy": "Exact rsID match to 1000G EUR BIM; reference positions; no liftover. P-only analysis, no effect-sign harmonization.",
+    "total_rows": 21101114,
+    "valid_rows_before_duplicate_filter": 21101103,
+    "duplicate_rsid_rows_removed": 61103,
+    "unique_valid_rsids": 21040000,
+    "matched_rsids": 14161368,
+    "matched_rsids_below_magma_min_n_removed": 0,
+    "unmatched_or_low_n_unique_valid_rsids": 6878632,
+    "match_fraction_of_unique_valid": 0.6730688212927757,
+    "zero_p_rows": 0,
+    "zero_p_values_clamped_to": 1e-300,
+    "sample_size": "N = n_cases + n_controls; N >= 50, matching MAGMA's default",
+    "per_snp_n_min": 42140.0,
+    "per_snp_n_median": 485999.0,
+    "per_snp_n_max": 487511.0,
+    "chromosome_counts": {
+      "1": 1119866,
+      "2": 1207796,
+      "3": 1026823,
+      "4": 1023887,
+      "5": 910969,
+      "6": 918886,
+      "7": 826353,
+      "8": 785741,
+      "9": 617073,
+      "10": 717754,
+      "11": 704938,
+      "12": 671733,
+      "13": 520328,
+      "14": 457317,
+      "15": 405276,
+      "16": 442582,
+      "17": 386588,
+      "18": 400388,
+      "19": 312740,
+      "20": 319879,
+      "21": 191833,
+      "22": 192618
+    },
+    "mhc_snps_included_in_primary": 78177,
+    "mhc_definition": "GRCh37 chr6:25000000-35000000"
+  },
+  "reference": {
+    "name": "MAGMA 1000 Genomes EUR reference",
+    "bim_rows": 22665064,
+    "autosomal_unique_rsids": 22132657,
+    "duplicate_autosomal_rsid_rows_removed": 0,
+    "reference_individuals": 503
+  },
+  "inputs_sha256": {
+    "gwas": "013134d22a2a0c2dd0cb683192d0c109da1aec83ba54d94a837a8b71bcbc4a1f",
+    "bim": "b7dfeb30cef0573059ae43dd85a6924e46e418d6fe03df6b0ff1166c79cfa131"
+  },
+  "outputs": {
+    "harmonized": "D:\\celltogwas-validation-results\\v1\\harmonized\\gwas_harmonized.tsv.gz",
+    "magma_pvalue_file": "D:\\celltogwas-validation-results\\v1\\harmonized\\gwas_for_magma.tsv"
+  }
+}
