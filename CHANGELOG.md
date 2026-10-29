@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.1.0a1
+
+- Experimental continuous/multiscale gene enrichment with SVD nuisance adjustment,
+  signed FFT cross-correlations, shared chromosome shifts, symmetric adaptive
+  minP calibration, Holm and dependence-robust BY multiplicity adjustments.
+- New `adaptive-gene` CLI and public `run_adaptive_gene_enrichment` API.
+- Fixed-design 6,000-replicate calibration/power benchmark with Wilson intervals,
+  paired baselines and explicit scenarios where adaptation loses power.
+- Shared 12,757-gene AD/brainSCOPE reanalysis, MHC/chr19 sensitivity checks,
+  fixed 99,999-resample stability check and 96 actually executed LD-aware MAGMA
+  continuous/binary property comparisons.
+- Explicitly report the boundary H-MAGMA Immune result and disagreement with
+  LD-aware continuous regression. No novel association or independent replication
+  is claimed. All original 1.0 primary conclusions remain unchanged.
+
 ## 1.0.0
 
 ### Added

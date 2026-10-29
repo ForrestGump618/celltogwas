@@ -1,0 +1,66 @@
+{
+  "analysis_date_local": "2026-10-30",
+  "status": "exploratory reanalysis, not replication",
+  "fixed_before_reanalysis": true,
+  "n_permutations": 19999,
+  "seed": 13,
+  "powers": [
+    1,
+    2,
+    4
+  ],
+  "thresholds": [
+    null,
+    2,
+    4
+  ],
+  "binary_fraction": 0.1,
+  "covariates": [
+    "log_length",
+    "log_nsnp",
+    "log_nparam",
+    "log_n",
+    "mean_expression",
+    "log_length_sq",
+    "log_nsnp_sq",
+    "mean_expression_sq"
+  ],
+  "primary_family": "24 classes x 2 mappings = 48 tests; global BY/Holm",
+  "sensitivity_families": [
+    "exclude MHC chr6:25-35Mb",
+    "exclude chromosome 19"
+  ],
+  "sensitivity_role": "robustness only; not replacements for primary or independent replications",
+  "algorithm_sha256": "079bc79cf31a1bb4734c230231c0c07c03affba108cc59ea9ad0ded1f9dd09b6",
+  "runner_sha256": "cb1127874eb5adce4ee227aecd6741b9a4ee67f4d6ed6f4551c236cdef643c73",
+  "inputs": {
+    "gtf": {
+      "path": "D:\\celltogwas-validation-data\\v1\\gencode\\gencode.v19.annotation.gtf.gz",
+      "sha256": "9909e8123a40eca090c3f8e501633f7cc65cd6c4adb83b95009745eca3564d70"
+    },
+    "expression": {
+      "path": "D:\\celltogwas-validation-results\\v1\\expression\\cell_type_mean_expression.tsv.gz",
+      "sha256": "97d5746edf63d1e463a32b72fb05fcfd26b641c0d4c082260d054b416e8b2cf9"
+    },
+    "detection": {
+      "path": "D:\\celltogwas-validation-results\\v1\\expression\\cell_type_detection_fraction.tsv.gz",
+      "sha256": "a123b1a712b8ed8ae5a051fc9a135b7e050a4063701bf7f70a537f673537e8c1"
+    },
+    "donors": {
+      "path": "D:\\celltogwas-validation-results\\v1\\expression\\cell_type_donors.tsv.gz",
+      "sha256": "eb71f06b45b9237d97a9f29a9813515bcd720becf07ce685d1c76c1af50d23bb"
+    },
+    "standard": {
+      "path": "D:\\celltogwas-validation-results\\v1\\magma\\standard_batched.genes.out.txt",
+      "sha256": "f286922bfe44392bf95234ca5b1a3bf4a5f4de5dfdb12b4cbae5064ec603ed2f"
+    },
+    "hmagma": {
+      "path": "D:\\celltogwas-validation-results\\v1\\magma\\hmagma_batched.genes.out.txt",
+      "sha256": "bf5ad2e56eae4c175ed59c44a1f1e0a0b1891d8dcf08d9886bec53ddbb211da1"
+    },
+    "benchmark_summary": {
+      "path": "..\\..\\outputs\\adaptive-benchmark\\summary.json",
+      "sha256": "410bdf7b645eece39c87c6d0b5b963b62be447dfec0379797e24053f5fed5f38"
+    }
+  }
+}

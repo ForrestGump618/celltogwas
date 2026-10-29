@@ -1,0 +1,9 @@
+{
+  "reason": "Resolve Monte Carlo uncertainty; one fixed check, no outcome-dependent stopping.",
+  "n_permutations": 99999,
+  "seed": 20261030,
+  "inputs": {
+    "standard": "fb31655376286acd7564f409f5f2b69026005628367bc18e9063e3fcc659f56d",
+    "hmagma": "afbdbc85f53f0b97159ea728e763e4b0ada4f9f454a4f4313b1460bf33f78eaa"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "measured_symbols_before_mapping": 17158,
+  "common_genes": 12757,
+  "excluded_ambiguous_autosomal_annotation_records": 2138,
+  "mapping": "one-to-one GENCODEv19 stable ID/symbol; intersection of both gene-result universes",
+  "missingness": "require donor count >0 in all 24 classes; do not impute unmeasured profiles",
+  "input_table_sha256": {
+    "standard": "fb31655376286acd7564f409f5f2b69026005628367bc18e9063e3fcc659f56d",
+    "hmagma": "afbdbc85f53f0b97159ea728e763e4b0ada4f9f454a4f4313b1460bf33f78eaa"
+  }
+}

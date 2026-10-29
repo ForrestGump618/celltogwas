@@ -1,0 +1,19 @@
+{
+  "scope": "Compact 1.1 alpha snapshots; full inputs, replicates, commands/logs in release evidence ZIP.",
+  "source": "Actual local executions; not synthetic substitution for real-data runs.",
+  "files": {
+    "adaptive-benchmark/protocol.json": "360ce321ea758f7942e8f14ab3996d7e2c1e0045e262da3a2082901ff61006ff",
+    "adaptive-benchmark/summary.json": "df79a6b03869864591396ac317e8d4655f90f48006c21df6ed69a80d6cef5ba2",
+    "adaptive-benchmark/summary.tsv": "e3d7c5062b2f5ba654bf140042aaa083fb7d12b009f9289ab0776385b2e48b8b",
+    "adaptive-magma/combined.tsv": "1d10abcde0d92c321276921dfd8e140f0486893493ee2ecb7637a305cbcfc083",
+    "adaptive-magma/hmagma.receipt.json": "8539ef88c3e56465013fecddd6de2d518a3e3efda2d5f02f2280fceefcf77a88",
+    "adaptive-magma/standard.receipt.json": "836a913227a191e9c53a929c1b280220a14c45062320a285cca8f1fb1e55ce27",
+    "adaptive-real/combined.tsv": "90a794ba5d6bea24eed3cbece51a2056cadb6abc489f877f6b20ef9918173bb8",
+    "adaptive-real/hmagma.primary.components.tsv": "e40c553c95cd9a497c22024b4ce5a3e0c123b4e5493c0e52cd2edcfa25384a05",
+    "adaptive-real/mapping.json": "a9b3260cdc402d80b7addb7871822c78e2b06efe29afdba4438363244d615422",
+    "adaptive-real/protocol.json": "080e1acfd029bd552afe6cb0853e9e36e2b1de3af41873801cc1226d00f76e84",
+    "adaptive-real/standard.primary.components.tsv": "39363b4cd24481be6e3ae80b99a33098f2374e11c3a9df600a02b13bfb9b6ebc",
+    "adaptive-stability/combined.tsv": "ebdd77812feae03250d3224a838c60618a673b0e26345aea68edd57f11e3419a",
+    "adaptive-stability/protocol.json": "d374239af09f85d4540cea927627b6658ef2885d98eeb3a0bff7d65ff4bdc923"
+  }
+}

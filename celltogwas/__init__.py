@@ -6,6 +6,7 @@ spatial permutation enrichment.
 """
 
 from ._version import __version__
+from .adaptive import AdaptiveResult, calibrate_adaptive, run_adaptive_gene_enrichment
 from .enrichment import (
     EnrichmentResult,
     benjamini_hochberg,
@@ -54,6 +55,7 @@ from .specificity import (
 )
 
 __all__ = [
+    "AdaptiveResult",
     "AnnotationError",
     "CellToGWASError",
     "EnrichmentError",
@@ -66,6 +68,7 @@ __all__ = [
     "WeightedIntervalIndex",
     "__version__",
     "benjamini_hochberg",
+    "calibrate_adaptive",
     "celltype_genome_range",
     "check_value_in_intervals",
     "circular_correlation_matrix",
@@ -83,6 +86,7 @@ __all__ = [
     "normalize_chromosome",
     "read_table",
     "run_enrichment",
+    "run_adaptive_gene_enrichment",
     "run_enrichment_by_chromosome",
     "specificity_matrix",
     "specificity_summary",

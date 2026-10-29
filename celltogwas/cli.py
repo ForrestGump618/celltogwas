@@ -14,6 +14,7 @@ import numpy as np
 import pandas as pd
 
 from ._version import __version__
+from .adaptive import run_adaptive_gene_enrichment
 from .exceptions import CellToGWASError
 from .io import (
     file_sha256,
@@ -137,6 +138,20 @@ def build_parser() -> argparse.ArgumentParser:
         default=10_000,
         help="Rows used for optional GWAS validation.",
     )
+    adaptive = subparsers.add_parser(
+        "adaptive-gene",
+        help="Selection-adjusted multiscale gene-program enrichment (experimental).",
+    )
+    adaptive.add_argument(
+        "--genes", required=True, help="Gene table: gene,chrom,pos,z and cell weights."
+    )
+    adaptive.add_argument("--cell-types", required=True, nargs="+")
+    adaptive.add_argument("--covariates", nargs="+", default=[])
+    adaptive.add_argument("--permutations", type=int, default=9_999)
+    adaptive.add_argument("--seed", type=int, default=13)
+    adaptive.add_argument("--output", required=True)
+    adaptive.add_argument("--components-output")
+    adaptive.add_argument("--report")
     return parser
 
 
@@ -446,6 +461,29 @@ def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
     try:
+        if args.command == "adaptive-gene":
+            result = run_adaptive_gene_enrichment(
+                read_table(args.genes),
+                cell_types=args.cell_types,
+                covariates=args.covariates,
+                n_permutations=args.permutations,
+                random_state=args.seed,
+            )
+            write_table(result.table, args.output)
+            if args.components_output:
+                write_table(result.components, args.components_output)
+            if args.report:
+                write_json(
+                    {
+                        "version": __version__,
+                        "command": "adaptive-gene",
+                        "input_sha256": file_sha256(args.genes),
+                        "runtime": _runtime_payload(),
+                        **result.diagnostics,
+                    },
+                    args.report,
+                )
+            return 0
         if args.command == "annotate":
             return _run_annotate(args)
         if args.command == "enrich":

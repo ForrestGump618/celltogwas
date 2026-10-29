@@ -3,6 +3,14 @@
 Regulatory-aware mapping and exploratory enrichment of GWAS loci across cell
 types.
 
+**Experimental 1.1.0a1:** continuous gene programs, dense/sparse evidence kernels,
+SVD nuisance adjustment, FFT shared circular randomizations and selection-adjusted
+adaptive minP tests. See [the mathematical specification](docs/ADAPTIVE.md) and
+[measured calibration/power and real-data limits](docs/ADAPTIVE_RESULTS.zh-CN.md).
+The stable [1.0.0 baseline](https://github.com/ForrestGump618/celltogwas/releases/tag/v1.0.0)
+is preserved. The adaptive method assumes residual genomic cyclic exchangeability;
+it does not provide arbitrary-LD validity or establish previously unknown causality.
+
 Version 1.0 is a rebuild of the original single-file toolkit. It keeps the
 legacy `cell2gwas` API available, but adds weighted genomic domains, expression
 specificity scores, vectorized interval lookup, spatial permutation tests,

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "D:\\celltogwas-validation-data\\v1\\magma\\magma_v1.10_win\\magma.exe",
+    "--gene-results",
+    "D:\\celltogwas-validation-results\\v1\\magma\\hmagma_batched.genes.raw",
+    "--gene-covar",
+    "C:\\Users\\Qingyuan Zhuang\\Documents\\Codex\\2026-10-29\\https-github-com-forrestgump618-celltogwas-https\\outputs\\adaptive-magma\\hmagma.covariates.tsv",
+    "missing-values=drop",
+    "--model",
+    "direction-covar=greater",
+    "condition-residualize=log_length,log_nsnp,log_nparam,log_n,mean_expression,log_length_sq,log_nsnp_sq,mean_expression_sq",
+    "--out",
+    "C:\\Users\\Qingyuan Zhuang\\Documents\\Codex\\2026-10-29\\https-github-com-forrestgump618-celltogwas-https\\outputs\\adaptive-magma\\hmagma.properties"
+  ],
+  "inputs": {
+    "D:\\celltogwas-validation-data\\v1\\magma\\magma_v1.10_win\\magma.exe": "e05e3d963215a973064852ec33640118d65745884cc800a5119ca7cffe6cb859",
+    "D:\\celltogwas-validation-results\\v1\\magma\\hmagma_batched.genes.raw": "e27c54a0eae0d03058872a21a5658572b0fbb69b166c945f4e86f55c11bb4a9c",
+    "C:\\Users\\Qingyuan Zhuang\\Documents\\Codex\\2026-10-29\\https-github-com-forrestgump618-celltogwas-https\\outputs\\adaptive-magma\\hmagma.covariates.tsv": "7c2c2b9df6b8c31a54a7ab14b5c6e8bd6b1cd25aaa60061f101eb7d7c75267bf"
+  },
+  "same_universe_as_adaptive": 12757,
+  "purpose": "Prespecified continuous and fixed top-10% binary gene-property comparators, not best-kernel selection.",
+  "returncode": 0,
+  "elapsed_seconds": 26.00803820003057,
+  "completed": true
+}

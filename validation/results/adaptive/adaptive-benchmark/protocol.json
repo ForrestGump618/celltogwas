@@ -1,0 +1,54 @@
+{
+  "scenarios": {
+    "null_independent": {
+      "rho": 0.0,
+      "effect": "none"
+    },
+    "null_correlated": {
+      "rho": 0.8,
+      "effect": "none"
+    },
+    "null_confounder_adjusted": {
+      "rho": 0.6,
+      "effect": "confounder"
+    },
+    "dense_weak": {
+      "rho": 0.6,
+      "effect": "dense",
+      "beta": 0.18
+    },
+    "sparse_strong": {
+      "rho": 0.6,
+      "effect": "sparse",
+      "beta": 3.5
+    },
+    "binary_favorable": {
+      "rho": 0.6,
+      "effect": "binary",
+      "beta": 0.8
+    }
+  },
+  "n_genes": 512,
+  "replicates_per_scenario": 1000,
+  "permutations": 999,
+  "design_seed": 1301,
+  "outcome_seed": 20261030,
+  "powers": [
+    1,
+    2,
+    4
+  ],
+  "thresholds": [
+    null,
+    2,
+    4
+  ],
+  "binary_fraction": 0.1,
+  "alpha": 0.05,
+  "n_cell_types": 3,
+  "power_target": "A, per-cell alpha=0.05",
+  "baseline": "same data, covariates, shifts and empirical calibration; one fixed kernel",
+  "module_sha256_before_run": "079bc79cf31a1bb4734c230231c0c07c03affba108cc59ea9ad0ded1f9dd09b6",
+  "benchmark_sha256_before_run": "be06b19421f067dfbdc030d7eca1765e927d90d335cbeb47724d33db3d4fe594",
+  "limitations": "Toy stationary Gaussian gene-order dependence, not realistic GWAS LD or donor uncertainty."
+}
